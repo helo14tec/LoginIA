@@ -16,7 +16,6 @@ main {
   justify-content: center;
 }
 img{
-  height: 60vh;
   width: 75%;
 }
 
@@ -32,7 +31,7 @@ img{
 
 .login {
   width: 70%;
-  max-width: 350px;
+  width: 60%;
   height: 90vh;
   padding: 30px;
   background-color: #00b7ff00;
@@ -42,7 +41,7 @@ img{
 
 h1 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 4.5em;
   padding: 5% 0;
   margin-bottom: 20px;
   color: #003046;
@@ -82,8 +81,68 @@ p {
   font-size: 1em;
   border: none;
   border-radius: 30px;
-  margin-top: 10%;
-  background-color: #b2dfdb;
+  margin-top: 5%;
+  background-color: #00608d;
   font-weight: bold;
+  color: #c7c5c5;
+  font-size: 1rem;
 }
 
+.bt-social {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.bt-social img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.bt-social:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.bt-social:hover img {
+  transform: scale(1.15);
+}
+.logar-com {
+  font-size: 0.80rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 16px;
+  color: #004b6e;
+}
+
+.icones-login {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.google {
+  background: #a3d9ff;
+  border: 2px solid #005077;
+}
+
+.gith {
+  background: #a3d9ff;
+  border: 2px solid #005077;
+}
+
+.face {
+  background: #a3d9ff;
+  border: 2px solid #005077;
+}

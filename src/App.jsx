@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Imagem from "./assets/isso.jpg";
+import Google from "./assets/google_logo_icon.png";
+import Gith from "./assets/github_logo_icon.png";
+import Face from "./assets/media_icon.png";
 import "./App.css";
 
 export default function App() {
@@ -23,6 +26,23 @@ export default function App() {
           <button type="button" className="bt-entrar">
             Logar
           </button>
+
+           <p className="logar-com">LOGAR COM</p>
+
+              <div className="icones-login">
+                <button type="button" className="bt-social google">
+                  <img src={Google} alt="Botão google" />
+                </button>
+
+                <button type="button" className="bt-social face">
+                  <img src={Face} alt="botão facebook" />
+                </button>
+
+                <button type="button" className="bt-social gith">
+                  <img src={Gith} alt="botão gith" />
+                </button>
+              </div>
+
         </form>
       </section>
     </main>
