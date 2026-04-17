@@ -84,10 +84,15 @@ p {
   margin-top: 5%;
   background-color: #00608d;
   font-weight: bold;
-  color: #c7c5c5;
+  color: #a8cee7;
   font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.bt-entrar:hover {
+  background-color: #003650;
+}
 .bt-social {
   width: 55px;
   height: 55px;
@@ -145,4 +150,101 @@ p {
 .face {
   background: #a3d9ff;
   border: 2px solid #005077;
+}
+
+@media (max-width: 767px) {
+  main {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* IMAGEM NO TOPO (MENOR) */
+  .imagemSection {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagemSection img {
+    width: 55%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* LOGIN CENTRALIZADO */
+  .loginSection {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login {
+    width: 85%;
+    height: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.3em;
+    padding: 10px 0;
+  }
+
+  input {
+    height: 42px;
+  }
+
+  .bt-entrar {
+    height: 45px;
+  }
+
+  .icones-login {
+    gap: 10px;
+  }
+
+  .bt-social {
+    width: 48px;
+    height: 48px;
+  }
+
+  .bt-social img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imagemSection {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .imagemSection img {
+    width: 85%;
+  }
+
+  .loginSection {
+    width: 50%;
+  }
+
+  .login {
+    width: 80%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  input {
+    height: 38px;
+  }
+
+  .bt-social {
+    width: 52px;
+    height: 52px;
+  }
 }
